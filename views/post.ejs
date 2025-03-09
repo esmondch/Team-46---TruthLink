@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title><%= post.title %></title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body>
+    <header>
+        <h1><%= post.title %></h1>
+        <p><%= post.content %></p>
+        <p>Posted by: <%= post.username %></p>
+    </header>
+    
+    <h3>Comments:</h3>
+    <ul>
+        <% post.comments.forEach(comment => { %>
+            <li><%= comment.username %>: <%= comment.text %></li>
+        <% }) %>
+    </ul>
+
+    <form action="/post/<%= post.id %>/comment" method="POST">
+        <input type="text" name="comment" placeholder="Add a comment" required>
+        <button type="submit">Comment</button>
+    </form>  
+
+    <br>
+    <a href="/">Back</a>
+</body>
+</html>

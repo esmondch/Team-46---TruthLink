@@ -1,0 +1,147 @@
+/* General Body Styling */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    padding: 20px;
+}
+
+/* Header Styling */
+header {
+    background-color: #0073e6;
+    color: white;
+    padding: 20px;  /* Increase padding for more space */
+    text-align: center;
+    margin-bottom: 30px;  /* Space between header and form */
+    border-radius: 8px;   /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow around header */
+}
+
+h1 {
+    font-size: 2em;  /* Make header text larger for better visibility */
+    margin: 0;       /* Remove any default margin */
+    margin-bottom: 10px;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    font-size: 1.1em;  /* Make sure the link is large enough */
+}
+
+/* Form Styling */
+form {
+    background-color: white;  /* White background for form */
+    padding: 20px;            /* Add space inside the form */
+    border-radius: 8px;       /* Rounded corners */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);  /* Soft shadow around form */
+    max-width: 400px;         /* Limit form width */
+    margin: 0 auto;           /* Center form on the page */
+}
+
+/* Input Field Styling */
+input[type="text"] {
+    width: 100%;             /* Make input field full width */
+    padding: 10px;           /* Add padding for comfort */
+    margin: 10px 0;          /* Add space above and below input field */
+    border: 1px solid #ccc;  /* Light border for input */
+    border-radius: 4px;      /* Rounded input corners */
+    box-sizing: border-box;  /* Include padding in element's total width */
+}
+
+/* Button Styling */
+button {
+    padding: 10px 20px;              /* Increase padding for button */
+    background-color: #0073e6;       /* Blue background */
+    color: white;                    /* White text */
+    border: none;                    /* Remove default button border */
+    border-radius: 4px;              /* Rounded button corners */
+    cursor: pointer;                 /* Change cursor to pointer */
+    width: 100%;                      /* Make button full width */
+    font-size: 1.1em;                 /* Make button text larger */
+}
+
+button:hover {
+    background-color: #005bb5;       /* Darken button on hover */
+}
+
+/* Link Styling (if needed in the form) */
+a {
+    color: #000000;
+    text-decoration: none;
+    font-size: 1.1em;
+}
+
+.top-right-links {
+    margin-left: auto;
+}
+
+.top-right-links a {
+    text-decoration: none;
+    color: #000000;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-weight: normal;
+}
+
+.top-right-links a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the posts list */
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+ul li {
+    margin: 10px 0;
+}
+
+ul li a {
+    text-decoration: none;
+    color: #333;
+    font-weight: normal;
+}
+
+ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Styling for the clickable "here" */
+.btn-link {
+    text-decoration: none;
+    color: #007bff;
+    font-weight: bold;
+}
+
+.btn-link:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+/* Style the bottom button container */
+.bottom-btn {
+    position: fixed;  /* Fixed positioning to stay at the bottom */
+    left: 20px;
+    bottom: 20px;  /* Adjust the value to set the distance from the bottom */
+    width: 100%;
+    text-align: left;
+    padding: 10px;
+    background-color: #f8f8f8;  /* Optional: background color */
+    border-top: 1px solid #ccc; /* Optional: border at the top */
+  }
+  
+  .bottom-btn p {
+    margin: 0;
+  }
+  
+  .bottom-btn a {
+    color: #007bff;
+    text-decoration: none;
+  }
+  
+  .bottom-btn a:hover {
+    text-decoration: underline;
+  }
+  

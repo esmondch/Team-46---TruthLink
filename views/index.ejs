@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Forum</title>
+    <link rel="stylesheet" href="/styles.css">
+</head>
+<body> 
+    <header>
+        <h1>Welcome to TruthLink, <%= username %>!</h1>
+        
+        <!-- Container for the top-right links -->
+        <div class="top-right-links">
+            <a href="/post/create">Create New Post</a> | <a href="/logout">Logout</a>
+        </div>
+    </header>
+    
+    <p>Share your thoughts, ask questions, and engage with the community!</p>
+
+    <h3>Posts:</h3>
+    <hr> <!-- Adds a line before the posts -->
+    <ul>
+    <% posts.forEach(post => { %>
+        <li>
+        <h4><a href="/post/<%= post.id %>"><%= post.title %></a></h4>
+        <p>Posted by: <%= post.username %></p> <!-- Display the username who posted -->
+        <hr> <!-- Adds a line after each post -->
+        </li>
+    <% }) %>
+    </ul>
+
+    <!-- Button to direct user to a private chat with a professional -->
+    <div class="bottom-btn">
+        <p>Feeling shy or wish to consult someone in private? Click <a href="/chat/professional" class="btn-link">here</a>.</p>
+    </div>    
+
+</body>
+</html>
